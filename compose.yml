@@ -1,0 +1,34 @@
+# compose.yaml
+services:
+    nginx:
+      image: nginx:alpine
+      restart: always
+      ports: ["8080:80"]
+      volumes:
+         - ./conf:/etc/nginx/conf.d:ro
+         - ./src/fake-NMBS:/var/www/html
+      depends_on: 
+         - php
+
+    php:
+      build: ./php
+      restart: always
+      volumes:
+        - ./src/fake-NMBS:/var/www/html
+      depends_on: 
+         - mysql
+
+    mysql:
+      image: mysql:5.7
+      restart: always
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: mydb
+        MYSQL_USER: admin
+        MYSQL_PASSWORD: admin
+      ports: ["3306:3306"]
+      volumes:
+          - mysql-data:/var/lib/mysql                # <-- named volume
+          - ./src/fake-NMBS/mysql-init:/docker-entrypoint-initdb.d:ro  # init scripts
+volumes:
+  mysql-data: {}
