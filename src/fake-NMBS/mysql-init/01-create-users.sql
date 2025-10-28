@@ -12,7 +12,7 @@ INSERT INTO users (email, password) VALUES
   ('freddie@cyberhell.be','Eminem4Ever'),
   ('mcurie@nmbs.be','RadiumRocks!'),
   ('aeinstein@hotmail.com','Relativity4Evr'),
-  ('bart@cyberhell','SlimShady2025$!'),
+  ('bart@cyberhell.be','SlimShady2025$!'),
   ('conductor@rails.be','AllAboard8508'),
   ('ticketmaster@rails.be','TicketsPlease5068'),
   ('rfermi@nmbs.be','AtomicMan#5'),
