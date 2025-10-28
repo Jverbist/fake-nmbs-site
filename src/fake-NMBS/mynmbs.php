@@ -6,8 +6,10 @@
    <meta http-equiv="X-UA-TextLayoutMetrics" content="gdi" /> <!-- Sets text layout rendering to GDI in Internet Explorer -->
    <title>MyNMBS</title> <!-- Title of the document, with a data attribute for internationalization -->
    <meta name="description" content="My NMBS" /> <!-- Meta description for the document -->
-   <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Sets the viewport to make the website responsive -->
-   <link rel="stylesheet" href="../fake-NMBS/v5/css/style.css" /> <!-- Link to external stylesheet -->
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Sets the viewport to make the website responsive -->
+   <link rel="stylesheet" href="https://www.belgiantrain.be/content/public/css/main.css?v=638539742520000000">  
+   <!-- <link rel="stylesheet" href="../fake-NMBS/v5/css/style.css" /> Link to external stylesheet -->
 </head>
 <body style="padding-top: 100px;">
 
